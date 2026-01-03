@@ -16,4 +16,8 @@ public abstract class Vehiculo {
         this.estado = estado;
     }
 
+    public String getId() {
+        return id;
+    }
+
 }
