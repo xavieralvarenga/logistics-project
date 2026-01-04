@@ -12,4 +12,38 @@ public class Dron extends Vehiculo{
         this.autonomiaMaxima = autonomiaMaxima;
         this.tieneCamara = tieneCamara;
     }
+
+    public double getAltitudMaxima() {
+        return altitudMaxima;
+    }
+
+    public double getAutonomiaMaxima() {
+        return autonomiaMaxima;
+    }
+
+    public boolean isTieneCamara() {
+        return tieneCamara;
+    }
+
+    public void setAltitudMaxima(double altitudMaxima) {
+        // Validación: La altitud no puede ser negativa
+        if (altitudMaxima >= 0) {
+            this.altitudMaxima = altitudMaxima;
+        } else {
+            throw new IllegalArgumentException("La altitud máxima no puede ser negativa.");
+        }
+    }
+
+    public void setAutonomiaMaxima(double autonomiaMaxima) {
+        // Validación: La autonomía (tiempo o distancia) debe ser mayor a cero
+        if (autonomiaMaxima > 0) {
+            this.autonomiaMaxima = autonomiaMaxima;
+        } else {
+            throw new IllegalArgumentException("La autonomía debe ser un valor positivo.");
+        }
+    }
+
+    public void setTieneCamara(boolean tieneCamara) {
+        this.tieneCamara = tieneCamara;
+    }
 }
