@@ -13,6 +13,11 @@ public class Dron extends Vehiculo{
         this.tieneCamara = tieneCamara;
     }
 
+    @Override
+    public String protocoloMantenimiento() {
+        return "Protocolo de mantenimiento para Dron: Revisar hélices y motores antes de cada vuelo, calibrar sensores cada 50 horas de vuelo, actualizar software regularmente.";
+    }
+
     public double getAltitudMaxima() {
         return altitudMaxima;
     }

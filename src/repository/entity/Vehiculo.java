@@ -16,6 +16,8 @@ public abstract class Vehiculo {
         this.estado = estado;
     }
 
+    public abstract String protocoloMantenimiento();
+
     public String getId() {
         return id;
     }
