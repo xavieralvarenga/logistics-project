@@ -15,6 +15,11 @@ public class Camion extends Vehiculo{
         setKilometraje(kilometraje);
     }
 
+    @Override
+    public String protocoloMantenimiento() {
+        return "Protocolo de mantenimiento para Camión: Revisar motor cada 10,000 km, cambiar aceite cada 5,000 km, inspeccionar frenos y neumáticos cada 15,000 km.";
+    }
+
     public double getKilometraje() {
         return kilometraje;
     }
