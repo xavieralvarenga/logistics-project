@@ -22,4 +22,7 @@ public abstract class Vehiculo {
         return id;
     }
 
+    public int getCapacidadMaxima() {
+        return capacidadMaxima;
+    }
 }
